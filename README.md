@@ -2,6 +2,12 @@
 
 ## Welcome to our brand generator website! Our tool allows you to easily create a unique and professional brand for your business or project.
 
+![Screenshot 2023-03-14 152334](https://user-images.githubusercontent.com/76839614/224963663-92630d85-164e-4a84-b8d1-fa7127733891.png)
+
+![Screenshot 2023-03-14 152504](https://user-images.githubusercontent.com/76839614/224964030-b85689d8-09b6-4693-a604-c52579bf25fd.png)
+
+
+
 
 
 ## **Features**
