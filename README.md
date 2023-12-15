@@ -35,7 +35,7 @@ Note: Make sure to check the tagline and hashtags for any spelling and grammatic
 | Language  | [Python](https://www.python.org/)                            |
 | Framework | [FastAPI](https://fastapi.tiangolo.com/)                     |
 | Hosting   | [AWS](https://aws.amazon.com/) (Lambda + API Gateway)        |
-| Other     | [OpenAI](https://openai.com/), [AWS CDK](https://aws.amazon.com/cdk/), [Docker](https://www.docker.com/) |
+| Other     | [OpenAI](https://openai.com/), [AWS CDK](https://aws.amazon.com/cdk/) |
 
 #### Frontend Stack
 
