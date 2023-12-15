@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>CopyKitt Tutorial | AI Generated Marketing</title>
+        <title>BrandGenerator.ai | AI Generated Marketing</title>
         <meta name="description" content="Generated branding snippets for your product." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
