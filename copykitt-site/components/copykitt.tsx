@@ -10,6 +10,7 @@ const CopyKitt: React.FC = () => {
   const [keywords, setKeywords] = React.useState([]);
   const [hasResuls, setHasResults] = React.useState(false);
   const [isLoading, setIsLoading] = React.useState(false);
+  const [error, setError] = React.useState<string | null>(null);
 
   const CHARACTER_LIMIT: number = 32;
 
@@ -20,8 +21,19 @@ const CopyKitt: React.FC = () => {
     console.log("Submitting: " + prompt);
     setIsLoading(true);
     fetch(`${ENDPOINT}?prompt=${prompt}`)
-      .then((res) => res.json())
-      .then(onResult);
+    .then((res) => {
+      if (!res.ok) {
+        throw new Error("Aws Credit Expired !");
+      }
+      return res.json();
+    })
+    .then(onResult)
+    .catch((error) => {
+      console.error("Fetch failed:", error);
+      setError("WebApp Not working as AWS Hosting Expired ! ");
+      setIsLoading(false);
+      
+    });
   };
 
   const onResult = (data: any) => {
@@ -84,7 +96,11 @@ const CopyKitt: React.FC = () => {
           <div className={gradientTextStyle + "  font-thin"}>Your AI branding assistant</div>
           </div>
 
-          {displayedElement}
+          {error ? (
+            <div className="text-red-500 text-center my-4">{error}</div>
+          ) : (
+            displayedElement
+          )}
         </div>
       </div>
     </div>
