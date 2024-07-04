@@ -26,7 +26,10 @@
 Note: Make sure to check the tagline and hashtags for any spelling and grammatical errors before using them publicly.
 
 
-## Tech Stack
+## Tech Stack Infrastructure:
+
+<img width="834" alt="image" src="https://github.com/horizenight/BrandGenerator.ai/assets/76839614/d5c23f34-057d-40e8-8985-36655cf86b3e">
+
 
 #### Backend Stack
 
